@@ -153,8 +153,7 @@ opencode-config/
 ├── skills/
 │   ├── simplify/SKILL.md       # Code review automation
 │   └── memory/SKILL.md         # Per-project persistent memory
-└── sessions/
-    └── *.json                  # Exported session transcripts
+└── .gitignore                  # Excludes sessions/ from tracking
 ```
 
 ---
