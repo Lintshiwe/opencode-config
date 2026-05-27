@@ -176,6 +176,72 @@ opencode-config/
 
 ---
 
+## Share
+
+Help others discover this config:
+
+[![Tweet](https://img.shields.io/badge/Share_on-Twitter/X-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/intent/tweet?text=Auto-routed%20AI%20coding%20agents%20for%20OpenCode%20%E2%80%94%20backend%20%2B%20frontend%20in%20parallel,%20per-project%20memory,%20code%20review,%20desktop%20notifications&url=https://github.com/Lintshiwe/opencode-config&hashtags=OpenCode,AI,DeveloperTools)
+[![Reddit](https://img.shields.io/badge/Post_on-Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/opencode/submit?url=https://github.com/Lintshiwe/opencode-config&title=OpenCode%20Global%20Config%20-%20Auto-routed%20backend/frontend%20agents%20with%20memory)
+[![Dev.to](https://img.shields.io/badge/Blog_on-Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/new?url=https://github.com/Lintshiwe/opencode-config)
+[![LinkedIn](https://img.shields.io/badge/Post_on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/Lintshiwe/opencode-config)
+[![Hacker News](https://img.shields.io/badge/Post_on-Hacker_News-FF6600?style=for-the-badge&logo=ycombinator&logoColor=white)](https://news.ycombinator.com/submit?url=https://github.com/Lintshiwe/opencode-config&title=OpenCode%20Global%20Config)
+
+### Copy-Paste Post Templates
+
+**Twitter/X:**
+```
+I set up @opencode_ai with auto-routing so backend tasks use deepseek-v4-pro and frontend uses kimi-k2.6 — completely automatic, no prompts.
+
++ Per-project memory across sessions
++ Parallel backend + frontend agents
++ Automated code review (simplify)
++ Desktop notifications on completion
+
+All configs, zero code: https://github.com/Lintshiwe/opencode-config
+```
+
+**Reddit (r/opencode, r/programming):**
+```
+Title: I built an OpenCode config that auto-routes work to the best AI model
+
+OpenCode lets you define custom agents with different models. I set up:
+
+- backend agent → deepseek-v4-pro (APIs, databases, auth)
+- frontend agent → kimi-k2.6 (UI, components, styling)
+- Auto-detection of task type — no manual switching
+- Parallel agents for full-stack work (backend + frontend at once)
+- Per-project memory file that persists across sessions
+- Automated code review with 3 parallel subagents
+- Desktop notifications when work completes
+
+Everything is in one repo — drop the files into ~/.config/opencode and restart.
+
+https://github.com/Lintshiwe/opencode-config
+```
+
+**LinkedIn:**
+```
+As AI coding tools evolve, the key differentiator isn't the model — it's the orchestration.
+
+I configured OpenCode to automatically route different types of work to different AI models:
+• Backend → deepseek-v4-pro
+• Frontend → kimi-k2.6
+• Research → default explorer
+
+The orchestrator detects task type silently, dispatches work, and even runs backend + frontend agents in parallel for full-stack projects.
+
+Bonus features: per-project long-term memory, automated code review, subagent status tracking, context pruning for token efficiency.
+
+Open source, MIT licensed. All configs, no code: https://github.com/Lintshiwe/opencode-config
+```
+
+**Discord / Slack (short):**
+```
+OpenCode auto-routing config — backend (deepseek-v4-pro) + frontend (kimi-k2.6) with per-project memory, parallel agents, code review, and notifications. Drop-in ready: https://github.com/Lintshiwe/opencode-config
+```
+
+---
+
 ## Contributing
 
 Issues, PRs, and discussions welcome. This is a public utility repo -- if you have improvements to agent configurations, skills, or workflows, open a PR.
