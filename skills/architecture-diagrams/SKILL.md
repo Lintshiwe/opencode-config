@@ -183,33 +183,54 @@ Run: `python3 diagram.py` → produces `my_architecture.png`
 
 ## Styling Best Practices
 
-### Dark Theme (recommended for presentations)
+### Light Theme (DESIGN.md warm cream palette — default)
 ```python
+# Warm cream canvas with coral accents — from DESIGN.md
 graph_attr = {
-    "fontsize": "22", "bgcolor": "#0D1117",
-    "splines": "spline", "pad": "1.0",
-    "nodesep": "0.8", "ranksep": "1.2",
+    "fontsize": "22",
+    "bgcolor": "#faf9f5",          # canvas — warm cream, not pure white
+    "splines": "spline",
+    "pad": "1.0",
+    "nodesep": "0.8",
+    "ranksep": "1.2",
 }
 node_attr = {
-    "fontsize": "12", "fontcolor": "#E6EDF3",
+    "fontsize": "12",
+    "fontcolor": "#141413",        # ink — warm dark text
     "penwidth": "2.5",
+    "style": "filled",
+    "fillcolor": "#efe9de",        # surface-card — slightly darker cream
 }
 edge_attr = {
-    "color": "#58A6FF", "fontcolor": "#8B949E",
-    "fontsize": "9", "penwidth": "1.5",
+    "color": "#cc785c",            # primary — coral
+    "fontcolor": "#6c6a64",        # muted — secondary text
+    "fontsize": "9",
+    "penwidth": "1.5",
 }
 ```
 
 ### Edge Colors for Meaning
 ```python
-# Success flow
-api >> Edge(color="#3FB950", style="bold") >> db
-# Async / batch
-job >> Edge(color="#D2A8FF", style="dashed") >> queue
-# Read path
-cache >> Edge(color="#79C0FF") >> api
-# Error / warning
-svc >> Edge(color="#F85149", style="dotted") >> alert
+# Primary flow (coral)
+api >> Edge(color="#cc785c", style="bold") >> db
+# Secondary / async (teal)
+job >> Edge(color="#5db8a6", style="dashed") >> queue
+# Read path (amber)
+cache >> Edge(color="#e8a55a") >> api
+# Success (green)
+svc >> Edge(color="#5db872", style="bold") >> deploy
+# Error / warning (red)
+svc >> Edge(color="#c64545", style="dotted") >> alert
+# Neutral / muted
+svc >> Edge(color="#6c6a64", style="dashed") >> log
+```
+
+### Cluster Styling
+```python
+# Clusters use surface-soft for nested groups
+with Cluster("Backend Layer"):
+    # Cluster inherits node_attr fillcolor
+    pass
 ```
 
 ## Layout Strategies
@@ -245,9 +266,18 @@ api >> cache
 from diagrams import Diagram, Cluster, Edge
 # Add project-specific imports here
 
-graph_attr = {"fontsize": "22", "bgcolor": "#0D1117", "splines": "spline"}
-node_attr = {"fontsize": "12", "fontcolor": "#E6EDF3", "penwidth": "2.5"}
-edge_attr = {"color": "#58A6FF", "fontcolor": "#8B949E", "penwidth": "1.5"}
+# Warm cream palette from DESIGN.md
+graph_attr = {
+    "fontsize": "22", "bgcolor": "#faf9f5", "splines": "spline",
+    "nodesep": "0.8", "ranksep": "1.2",
+}
+node_attr = {
+    "fontsize": "12", "fontcolor": "#141413",
+    "penwidth": "2.5", "style": "filled", "fillcolor": "#efe9de",
+}
+edge_attr = {
+    "color": "#cc785c", "fontcolor": "#6c6a64", "penwidth": "1.5",
+}
 
 with Diagram(
     "Project Architecture",
